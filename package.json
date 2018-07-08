@@ -4,6 +4,8 @@
   "description": "Character builder for The Realm Online",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "watch": "nodemon --watch src --delay 250ms --exec npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/Yinkin45/realm-online-charbuilder/issues"
   },
-  "homepage": "https://github.com/Yinkin45/realm-online-charbuilder#readme"
+  "homepage": "https://github.com/Yinkin45/realm-online-charbuilder#readme",
+  "dependencies": {
+    "koa": "^2.5.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "mongoose": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5",
+    "standard": "^11.0.1"
+  }
 }
