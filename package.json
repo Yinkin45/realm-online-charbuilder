@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node src/index.js",
     "watch": "nodemon --watch src --delay 250ms --exec npm start",
+    "start-db": "mongod --dbpath ./database",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
