@@ -1,0 +1,19 @@
+{
+  "name": "realm-online-charbuilder",
+  "version": "1.0.0",
+  "description": "Character builder for The Realm Online",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yinkin45/realm-online-charbuilder.git"
+  },
+  "author": "Mike Rogers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yinkin45/realm-online-charbuilder/issues"
+  },
+  "homepage": "https://github.com/Yinkin45/realm-online-charbuilder#readme"
+}
