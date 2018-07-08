@@ -2,7 +2,16 @@ const Account = require('../models/Account')
 
 // Gets a list of all accounts
 module.exports.listAccounts = async function (ctx, next) {
-  const accounts = await Account.find()
+  const { name } = ctx.query
+  const criteria = {}
+
+  // If searching by name, filter by matching usernames (allow partial match)
+  // Uses Regex to match within strings, 'i' for case-insensitive
+  if (name) {
+    criteria.username = { $regex: name, $options: 'i' }
+  }
+
+  const accounts = await Account.find(criteria)
   ctx.body = accounts
 }
 
