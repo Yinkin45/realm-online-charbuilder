@@ -1,0 +1,182 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-07-08T05:39:57.181Z",
+	"__export_source": "insomnia.desktop.app:v5.16.6",
+	"resources": [
+		{
+			"_id": "wrk_b274ad209a5f4ed9995c9e2cf6113fe7",
+			"created": 1531023581065,
+			"description": "",
+			"modified": 1531023581065,
+			"name": "Realm Char Builder",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_6e283f36f7e54f029d035fbcc43a3e88",
+			"color": null,
+			"created": 1531023581078,
+			"data": {},
+			"isPrivate": false,
+			"modified": 1531023581078,
+			"name": "New Environment",
+			"parentId": "wrk_b274ad209a5f4ed9995c9e2cf6113fe7",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_80f95e0951704d818f1b9b18d2d3ed5a",
+			"cookies": [],
+			"created": 1531023581083,
+			"modified": 1531023581083,
+			"name": "Default Jar",
+			"parentId": "wrk_b274ad209a5f4ed9995c9e2cf6113fe7",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_eaa7b9df876140d19e6189a2b2b26c08",
+			"created": 1531025623960,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1531025623960,
+			"modified": 1531025623960,
+			"name": "Accounts",
+			"parentId": "wrk_b274ad209a5f4ed9995c9e2cf6113fe7",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_7f1927c9831c4dc19a2fcc003c99193d",
+			"authentication": {},
+			"body": {},
+			"created": 1531025629545,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1531025629545,
+			"method": "GET",
+			"modified": 1531025796023,
+			"name": "List Accounts",
+			"parameters": [],
+			"parentId": "fld_eaa7b9df876140d19e6189a2b2b26c08",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/accounts",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3869d9bb6d9945fea15f52c46d4d9a21",
+			"authentication": {},
+			"body": {},
+			"created": 1531026268607,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1531025629495,
+			"method": "GET",
+			"modified": 1531026278458,
+			"name": "Get Account by Name",
+			"parameters": [],
+			"parentId": "fld_eaa7b9df876140d19e6189a2b2b26c08",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/accounts/aerosius",
+			"_type": "request"
+		},
+		{
+			"_id": "req_6ecfbb57dad14a26bee3ba8b276b48ae",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"username\": \"aerosius\",\n\t\"password\": \"miggle\"\n}"
+			},
+			"created": 1531026454575,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_008fbd4318624962816f73024b7057e2",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1531025629445,
+			"method": "POST",
+			"modified": 1531027684353,
+			"name": "Create Account",
+			"parameters": [],
+			"parentId": "fld_eaa7b9df876140d19e6189a2b2b26c08",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/accounts",
+			"_type": "request"
+		},
+		{
+			"_id": "req_5406b451c0d6493e9a764b39c51b1c3d",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"emailAddress\": \"the_diggle@miggle2.com\"\n}"
+			},
+			"created": 1531026711035,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_008fbd4318624962816f73024b7057e2",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1531025629395,
+			"method": "PATCH",
+			"modified": 1531027717925,
+			"name": "Update Account by Name",
+			"parameters": [],
+			"parentId": "fld_eaa7b9df876140d19e6189a2b2b26c08",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/accounts/aerosius",
+			"_type": "request"
+		},
+		{
+			"_id": "req_86d4170b359d47aaa8e505424e608ed3",
+			"authentication": {},
+			"body": {},
+			"created": 1531026725158,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_008fbd4318624962816f73024b7057e2",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1531025629345,
+			"method": "DELETE",
+			"modified": 1531026740601,
+			"name": "Delete Account by Name",
+			"parameters": [],
+			"parentId": "fld_eaa7b9df876140d19e6189a2b2b26c08",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "http://localhost:3000/accounts/aerosius",
+			"_type": "request"
+		}
+	]
+}
